@@ -1,0 +1,149 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #111;
+  padding: 20px 0;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 24px;
+  margin-right: auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #111;
+  text-shadow: 0 0 20px #ff7f50, 0 0 20px #ff7f50;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 20px black, 0 0 20px black;
+}
+
+
+.btn {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #ff6347;
+}
+
+.featured-cars {
+  background-color: #333;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.featured-cars h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.car {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.car img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.car h3 {
+  margin-top: 10px;
+}
+
+.car p {
+  margin: 10px 0;
+}
+
+.car button {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.car button:hover {
+  background-color: #ff6347;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.hero {
+  font-size: 36px;
+  margin-bottom: 20px;
+  background-image: url('https://e0.pxfuel.com/wallpapers/257/6/desktop-wallpaper-need-for-speed-orange-logo-nfs-orange-neon-lights-creative-orange-abstract-background-need-for-speed-logo-nfs-logo-need-for-speed.jpg'); /* Add the background image */
+  background-size: cover; /* Ensure the background image covers the entire element */
+  background-position: center; /* Center the background image */
+  color: #fff; /* Set text color to ensure visibility */
+  padding: 20px; /* Add padding to provide space around the text */
+  border-radius: 10px;
+}
