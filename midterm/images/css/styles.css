@@ -1,13 +1,13 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #5bc8b2;
+  background-color: rgb(141, 141, 173);
   margin: 0;
   padding: 0;
 }
 
 .container {
-  background-color: rgb(181, 255, 232);
+  background-color:lavender;
   max-width: 800px;
   padding: 10px;
   margin: 0 auto;
@@ -30,24 +30,18 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0;
   font-size: 40px;
   color: white;
 }
 
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type:none;
   display: flex;
   justify-content: center;
 }
 
-nav ul li {
-  display: inline;
-}
-
-nav ul li:not(:last-child)::after {
+nav ul li:not(:last-child):after {
   content: "|";
   margin-left: 15px;
   margin-right: 15px;
@@ -55,7 +49,7 @@ nav ul li:not(:last-child)::after {
 }
 
 nav ul li a {
-  text-decoration: none;
+  text-decoration:solid;
   color: rgb(0, 0, 0);
   padding: 0 90px;
 }
@@ -65,7 +59,7 @@ nav ul li a {
   margin: 0 auto;
 }
 
-.article-img {
+.jellyfish-img {
   float: left;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -76,7 +70,7 @@ nav ul li a {
 }
 
 .facts h3 {
-  color: #333;
+  color: black;
   text-align: left;
 }
 
@@ -87,7 +81,7 @@ nav ul li a {
 
 .facts ul li:before {
   content: '•';
-  margin-right: 5px;
+  margin-right: 8px;
   color: black;
 }
 
@@ -105,6 +99,9 @@ nav ul li a {
 
 #contact h3 {
   margin-bottom: 10px;
+  text-align: center;
+
+
 }
 
 #contact label {
@@ -117,9 +114,9 @@ nav ul li a {
 #contact textarea {
   width: 100%;
   padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-bottom: 8px;
+  border: 1px solid white;
+  border-radius: 2px;
   box-sizing: border-box;
 }
 
@@ -138,25 +135,21 @@ nav ul li a {
 
 #contact button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: rgb(15, 15, 189);
   color: white;
   border: none;
   border-radius: 0px;
   cursor: pointer;
 }
 
-#message {
-  width: 100%; 
-  height: 120px; 
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 0px;
-  box-sizing: border-box;
+#message{
+ height: 120px; 
+padding: 8px;
+box-sizing: border-box;
 }
 
 #contact button:hover {
-  background-color: #0056b3;
+  background-color: blue;
 }   
 
 footer {
