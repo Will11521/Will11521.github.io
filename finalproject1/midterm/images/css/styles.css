@@ -1,0 +1,157 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(141, 141, 173);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color:lavender;
+  max-width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.Background {
+  width: 800px;
+  height: 400px;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+}
+
+
+nav ul {
+  list-style-type:none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li:not(:last-child):after {
+  content: "|";
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #000000;
+}
+
+nav ul li a {
+  text-decoration:solid;
+  color: rgb(0, 0, 0);
+  padding: 0 90px;
+}
+
+#story {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.jellyfish-img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.facts {
+  padding: 10px;
+}
+
+.facts h3 {
+  color: black;
+  text-align: left;
+}
+
+.facts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.facts ul li:before {
+  content: '•';
+  margin-right: 8px;
+  color: black;
+}
+
+#contact {
+  margin-top: 20px;
+  border: 1px solid #000000;
+  border-radius: 0px; 
+  padding: 20px;
+  
+}
+
+#contact form {
+  width: 100%;
+}
+
+#contact h3 {
+  margin-bottom: 10px;
+  text-align: center;
+
+
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid white;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+#contact fieldset {
+  margin-bottom: 5px;
+}
+
+#contact legend {
+  font-weight: bold;
+}
+
+#contact fieldset label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#contact button {
+  padding: 10px 20px;
+  background-color: rgb(15, 15, 189);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+#message{
+ height: 120px; 
+padding: 8px;
+box-sizing: border-box;
+}
+
+#contact button:hover {
+  background-color: blue;
+}   
+
+footer {
+  text-align: right;
+}
