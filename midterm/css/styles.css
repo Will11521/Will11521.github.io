@@ -1,0 +1,123 @@
+
+
+/* Body styles */
+body {
+  line-height: 1;
+  width: 910px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 16px;
+  background-color: #d6f6ee;
+  margin: 0 auto;
+}
+
+/* HTML background color */
+html {
+  background-color: #aad4cf;
+}
+
+/* Header styles */
+header {
+  position: relative;
+  margin-bottom: 10px;
+  text-align:center
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+
+}
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+  
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+}
+
+h1 {
+  font-size: 46px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+  
+}
+
+
+/* Main content styles */
+.h {
+  margin: 10px;
+}
+
+.paragraph {
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.imgagee {
+  float: left;
+  width: 208px;
+  height: auto;
+  margin: 10px;
+}
+
+
+/* Form styles */
+.frm {
+  margin: 10px 0;
+  text-align: left;
+  padding: 36px 16px 16px;
+  border: 1px solid #000;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* Footer styles */
+footer {
+  text-align: right;
+  padding: 10px ;
+}
