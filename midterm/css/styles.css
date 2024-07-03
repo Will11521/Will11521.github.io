@@ -1,6 +1,6 @@
 
 
-/* Body styles */
+
 body {
   line-height: 1;
   width: 910px;
@@ -62,7 +62,7 @@ h1 {
 }
 
 
-/* Main content styles */
+
 .h {
   margin: 10px;
 }
@@ -73,7 +73,7 @@ h1 {
   padding: 10px;
 }
 
-
+/*second image that needs the text to wrap around it */
 .imgagee {
   float: left;
   width: 208px;
@@ -82,7 +82,7 @@ h1 {
 }
 
 
-/* Form styles */
+/* This styles the form as i labelled it frm */
 .frm {
   margin: 10px 0;
   text-align: left;
@@ -113,7 +113,7 @@ textarea {
 }
 
 
-/* Footer styles */
+/* This property sets the footer to the right side  */
 footer {
   text-align: right;
   padding: 10px ;
