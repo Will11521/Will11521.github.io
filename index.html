@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The System</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip links for accessibility -->
+    <a href="#main-nav" class="skip-link">Skip to navigation</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
+        <h1>THE <span>SYSTEM</span></h1>
+        <nav role="navigation" id="main-nav" tabindex="-1">
+            <ul>
+                <li><a href="">Planets</a></li>
+                <li><a href="">Interstellar</a></li>
+                <li><a href="" class="btn blue">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main" id="main-content" tabindex="-1">
+        <section class="hero">
+            <img src="images/milky-way.jpg" alt="Starry galaxy background">
+            <div class="hero-text">
+                <p class="magazine">THE SYSTEM MAGAZINE</p>
+                <h2>Welcome to the <span>Solar System</span></h2>
+                <p>Take a tour around the coolest stellar system around.</p>
+            </div>
+        </section>
+        <section class="planets" role="region" aria-label="Planetary Information">
+            <h2>Meet the Locals</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="images/sun.jpg" alt="Image of the Sun with fiery surface">
+                    <h3>The Sun</h3>
+                    <a href="https://en.wikipedia.org/wiki/Sun" class="btn purple">Learn More</a>
+                </div>
+                <div class="grid-item">
+                    <img src="images/mercury.jpg" alt="Image of Mercury with cratered surface">
+                    <h3>Mercury</h3>
+                    <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" class="btn purple">Learn More</a>
+                </div>
+                <div class="grid-item">
+                    <img src="images/venus.jpg" alt="Image of Venus with cloudy surface">
+                    <h3>Venus</h3>
+                    <a href="https://en.wikipedia.org/wiki/Venus" class="btn blue">Learn More</a>
+                </div>
+                <div class="grid-item">
+                    <img src="images/earth.jpg" alt="Image of Earth with oceans and continents">
+                    <h3>Earth</h3>
+                    <a href="https://en.wikipedia.org/wiki/Earth" class="btn blue">Learn More</a>
+                </div>
+                <div class="grid-item">
+                    <img src="images/moon.jpg" alt="Image of the Moon with craters">
+                    <h3>The Moon</h3>
+                    <a href="https://en.wikipedia.org/wiki/Moon" class="btn purple">Learn More</a>
+                </div>
+                <div class="grid-item">
+                    <img src="images/mars.jpg" alt="Image of Mars with reddish surface">
+                    <h3>Mars</h3>
+                    <a href="https://en.wikipedia.org/wiki/Mars" class="btn purple">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>© 2024 The System</p>
+    </footer>
+</body>
+</html>
