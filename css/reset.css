@@ -1,4 +1,4 @@
-/* Basic reset inspired by Josh W. Comeau and Meyer’s reset */
+/* Basic CSS reset - used the one from class notes */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 html, body {
     height: 100%;
-    line-height: 1.6;
+line-height: 1.6; 
 }
 
 ul {
@@ -19,7 +19,7 @@ a {
     color: inherit;
 }
 
-img {
+ img{
     max-width: 100%;
     height: auto;
 }

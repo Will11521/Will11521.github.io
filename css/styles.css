@@ -1,7 +1,7 @@
 /* Custom properties for colors */
 :root {
     --primary-color: #00AEEF; /* Blue for default state */
-    --purple-color: #A855F7;  /* Purple for clicked state */
+    --purple-color: #A855F7;  /* Purple for visited state */
     --teal-green: #26A69A;    /* Teal green for hover effects */
 }
 
@@ -12,7 +12,7 @@ body {
     color: #fff;
 }
 
-/* Center content and restrict max width */
+/* Center content and restrict max width - took me a while to figure this out */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -62,7 +62,7 @@ nav li {
 
 nav a {
     color: #fff;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; 
 }
 
 nav a:hover {
@@ -80,14 +80,26 @@ nav a:hover {
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+/* I tried adding a border but it didn't look good */
+.btn {
+    border: none; 
+}
+
 .btn:hover {
     background-color: var(--teal-green);
     box-shadow: 0 0 10px var(--teal-green);
-    transform: scale(1.05);
+    transform: scale(1.05); /* makes it pop out */
 }
 
 .btn:focus {
     outline: 2px solid #fff;
+}
+
+/* Visited state for Learn More buttons - changes to purple after visiting */
+/* Note: This might make buttons purple if you've visited the links before */
+.learn-more:visited {
+    background-color: var(--purple-color);
+    border: 2px solid var(--purple-color);
 }
 
 /* Hero Section */
