@@ -1,7 +1,8 @@
-/* Custom properties */
+/* Custom properties for colors */
 :root {
-    --primary-color: #00c4ff; /* Cyan accent color */
-    --purple-color: #6b3fa0;  /* Purple for buttons */
+    --primary-color: #00AEEF; /* Blue for default state */
+    --purple-color: #A855F7;  /* Purple for clicked state */
+    --teal-green: #26A69A;    /* Teal green for hover effects */
 }
 
 /* General styling */
@@ -11,38 +12,43 @@ body {
     color: #fff;
 }
 
+/* Center content and restrict max width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
 }
 
-/* Header */
+/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
 }
 
-header h1 {
-    font-size: 2rem;
+header h1 .the {
+    color: #fff;
 }
 
-header h1 span {
-    position: relative;
+header h1 .system {
     color: var(--primary-color);
-    display: inline-block; /* Added to ensure ::after positions correctly */
+    position: relative;
 }
 
-header h1 span::after {
+header h1 .system::after {
     content: '';
     position: absolute;
-    bottom: -4px; /* Adjusted from 0 to -4px to ensure underline is visible below text */
+    bottom: -4px;
     left: 0;
     width: 100%;
     height: 4px;
     background-color: var(--primary-color);
-    z-index: -1;
 }
 
 nav ul {
@@ -63,35 +69,28 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* Removed nav a:visited since links don’t navigate anywhere (href="") and visited state isn’t needed */
-
-/* Button styling */
+/* Button Styling */
 .btn {
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     text-align: center;
-}
-
-.btn.blue {
+    color: #fff;
     background-color: var(--primary-color);
-}
-
-.btn.purple {
-    background-color: var(--purple-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-    filter: brightness(1.1);
+    background-color: var(--teal-green);
+    box-shadow: 0 0 10px var(--teal-green);
+    transform: scale(1.05);
 }
 
 .btn:focus {
     outline: 2px solid #fff;
 }
 
-/* Removed .btn:visited since buttons aren’t meant to change on visited state */
-
-/* Hero section */
+/* Hero Section */
 .hero {
     position: relative;
     margin: 2rem 0;
@@ -113,16 +112,17 @@ nav a:hover {
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .magazine {
     font-size: 0.8rem;
-    margin-bottom: 0.5rem;
 }
 
 .hero-text h2 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
 }
 
 .hero-text h2 span {
@@ -139,9 +139,9 @@ nav a:hover {
     font-size: 1.2rem;
 }
 
-/* Planets section */
+/* Planets Section */
 .planets {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .planets h2 {
@@ -164,24 +164,59 @@ nav a:hover {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .grid-item h3 {
     margin: 1rem 0;
     font-size: 1.2rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 0 10px var(--teal-green);
+}
+
+.grid-item img:hover + h3 {
+    color: var(--teal-green);
+    text-shadow: 0 0 5px var(--teal-green);
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 footer p {
     font-size: 0.9rem;
 }
 
-/* Responsive design */
+/* Accessibility: Skip Links */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus,
+.skip-link:hover {
+    top: 0;
+}
+
+.skip-link:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+/* Responsive Design */
 @media (max-width: 900px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -229,28 +264,3 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
-
-/* Skip link styling */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    color: #000;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    z-index: 1000;
-    transition: top 0.3s ease;
-}
-
-.skip-link:focus,
-.skip-link:hover {
-    top: 0;
-}
-
-.skip-link:focus {
-    outline: 2px solid var(--primary-color);
-}
-
